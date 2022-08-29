@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Zilla+Slab&display=swap');
+
+@font-face
+{
+    font-family: 'pirate';
+    src: url('font/pirate.eot');
+    src: url('font/pirate.eot?#iefix') format('embedded-opentype'),
+         url('font/pirate.woff') format('woff'),
+         url('font/pirate.ttf') format('truetype'),
+         url('font/pirate.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	padding: 0px;
+	margin: 0;
+}
+
+.nav-bar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 4rem;
+	background-attachment:fixed;
+	width: 100vw;
+	/*background: rgb(2,0,36);*/
+	/*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,121,9,0.47102591036414565) 35%, rgba(255,0,61,0.8323704481792717) 80%);*/
+background: rgb(191,238,174);
+background: radial-gradient(circle, rgba(191,238,174,1) 0%, rgba(148,164,233,0.5746673669467788) 100%);
+
+
+	align-items: center;
+}
+
+.img-logo
+{
+	margin-left: 40px;
+	border-radius: 50%;
+	width:50px;
+	height:60px;
+}
+
+.menu{
+display: flex;
+list-style-type: none;
+}
+
+.link-menu{
+	margin-right:40px;
+}
+
+.link-menu a {
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: black;
+	font-family: pirate;
+	letter-spacing: 1.5px;
+
+}
+
+.link-menu a:hover
+{
+		border-bottom:2px solid red;
+}
+
+/*--------------------baner------------*/
+section{
+	width: 100vw;
+	height:90vh;
+	background:url('images/paner.jpg');
+	background-size: cover;
+}
+
+.description{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.titre-principale{
+	margin-left:50px;
+	margin-top: 50px;
+	letter-spacing: 2px;
+    font-family: 'Zilla Slab', serif;
+	font-weight: normal;
+	font-size: 2.1rem;
+	color:black;
+	font-weight: 700;
+}
+
+.Post{
+	color: red;
+
+text-align: center;
+}
+
+.link-contact{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	margin-left:0;
+	list-style-type:none;
+}
+
+.link-contact li{
+margin-left: 0.5em;
+font-size:3em;
+color: green;
+}
+
+.fa-phone{
+	color: black;
+}
+
+.fa-linkedin ,.fa-facebook{
+	color: blue;
+}
+
+.fa-linkedin ,.fa-facebook ,.fa-phone,.fa-whatsapp:hover{
+	cursor: pointer;
+}
+
